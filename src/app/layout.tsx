@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Fraunces, Space_Grotesk } from "next/font/google";
+import { Shrikhand, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
-const displayFont = Fraunces({
+const displayFont = Shrikhand({
+  weight: "400",
   variable: "--font-display",
   subsets: ["latin"],
 });
@@ -13,8 +14,8 @@ const bodyFont = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Henry He | Roast-Ready Bio",
-  description: "A playful, interactive bio for Henry He (Columbia College '28).",
+  title: "Context Stormboard",
+  description: "Neon community contexts and lightning caption duels.",
 };
 
 export default function RootLayout({
